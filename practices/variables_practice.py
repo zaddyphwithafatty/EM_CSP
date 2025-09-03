@@ -12,11 +12,14 @@ green = "y favorite color is green"
 print (green)
 ucas = "utah county acadamy of science"
 print (ucas)
-25 = "the year is 2025"
-print (25)
+year = "the year is 2025"
+print (year)
 brownish = "my ye color is brownish"
 print (brownish)
-14 = "my age is 14"
-print (14)
+age = "my age is 14"
+print (age)
 church = "my facorite subject is seminary"
 print (church)
+fav_subject = input("what is your favorite subject in school")
+
+print(fav_subject)
