@@ -56,7 +56,7 @@ e = 5
 f = 2
 g = 24
 h = 6
-result = -a*((b-c*d)/e) - f * g / h
+result = -a * ((b - c * d) / e) - f * g / h
 print(result) # output: -3
 
 #problem 7
