@@ -4,4 +4,5 @@ numTwo = 24
 numThree = 8
 numFourth = 4
 numFive = 6
-print((7-24)/8*4+6=1)
+result = a - b / c * d + e
+print(result)  # Output: 1.0
