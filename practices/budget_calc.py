@@ -33,6 +33,6 @@ leftover = income - total_expenses
 print ("your rent is $ ", rent, " and that is", round(rent_percent, 2), "% of your income")
 print ("your utilities are $", utilities, "and that is", round(utilities_percent), "% of your income")
 print ("your groceries $", groceries, "and tht is", round (groceries_percent), "% of your income")
-print ("your transportation is $ ", transportation, " and that is", round(transportation_percent), "% of your income")
+print ("your transportation is $ ", transportation, " and that is", round(transportation_precent), "% of your income")
 print ("you should save $", round( saving, 2), "each month, that is", saving_percent, "% of your income")
 print ("you have $", round (leftover, 2), "0f spending money each month")
