@@ -1,0 +1,19 @@
+##M 7th function notes
+
+#What a function is
+   #A function is a block of code that only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result.
+#why we use functions
+   # it makes easier by redcuing code sizes
+#How to write a function in Python
+def greet():
+    name=input("What is your name? ").strip().title()
+    print("Hello, welcome to the program!")
+#What parameters and arguments are
+   #Parameters are the names used when defining a function or method, while arguments are the actual values you pass to the function when calling it.
+#How to use parameters and arguments in python
+def greet(name):  #name is the parameter
+    print("Hello, " + name + ", welcome to the program!")
+#What return statements are
+   #used to exit a function and go back to the place where it was called.
+#How to use return statements in a program
+   #return value
