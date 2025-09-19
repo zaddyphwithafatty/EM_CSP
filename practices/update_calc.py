@@ -1,41 +1,29 @@
 #EM 7th Calc update
 
-def get_user_inputs():
-    # Ask the user for their income and expenses
-    income = float(input("Hi, could you tell me what is your monthly income? "))
-    rent = float(input("What is your monthly rent? "))
-    utilities = float(input("What is your monthly utility bills? "))
-    groceries = float(input("How much do you spend on groceries each month? "))
-    transportation = float(input("How much do you spend on transportation each month? "))
+def get_input(prompt):
+    value = float(input(prompt))
+    return value
 
-    return income, rent, utilities, groceries, transportation
+def calculate_percent(income, expense):
+    return (expense / income) * 100
 
-def calculate_percentages(income, rent, utilities, groceries, transportation):
-    # Calculate the savings (10% of income)
-    savings = income * 0.10
+def main():
+    print("Welcome to the Financial Calculator!")
 
-    # Calculate the total expenses and leftover money
-    total_expenses = rent + utilities + groceries + transportation + savings
-    leftover = income - total_expenses
+    income = get_input("Enter your monthly income: $")
+    rent = get_input("Enter your monthly rent: $")
+    food = get_input("Enter your monthly food cost: $")
+    transportation = get_input("Enter your monthly transportation cost: $")
+    entertainment = get_input("Enter your monthly entertainment cost: $")
 
-    # Calculate percentages of income for each expense
-    rent_percent = (rent / income) * 100
-    utilities_percent = (utilities / income) * 100
-    groceries_percent = (groceries / income) * 100
-    transportation_percent = (transportation / income) * 100
+    print("\nHere is the percentage of your income spent on each category:")
+    print(f"Rent: {calculate_percent(income, rent):.2f}%")
+    print(f"Food: {calculate_percent(income, food):.2f}%")
+    print(f"Transportation: {calculate_percent(income, transportation):.2f}%")
+    print(f"Entertainment: {calculate_percent(income, entertainment):.2f}%")
 
-    return savings, rent_percent, utilities_percent, groceries_percent, transportation_percent, leftover
+    total_expenses = rent + food + transportation + entertainment
+    print(f"\nTotal Expenses: ${total_expenses:.2f}")
+    print(f"Total Percent of Income Spent: {calculate_percent(income, total_expenses):.2f}%")
 
-def print_results(rent, utilities, groceries, transportation, savings, rent_percent, utilities_percent, groceries_percent, transportation_percent, leftover):
-    # Print the results
-    print(f"Your rent is ${rent}, and that is {round(rent_percent, 2)}% of your income.")
-    print(f"Your utilities are ${utilities}, and that is {round(utilities_percent, 2)}% of your income.")
-    print(f"Your groceries are ${groceries}, and that is {round(groceries_percent, 2)}% of your income.")
-    print(f"Your transportation is ${transportation}, and that is {round(transportation_percent, 2)}% of your income.")
-    print(f"You should save ${round(savings, 2)} each month, that is 10% of your income.")
-    print(f"You have ${round(leftover, 2)} of spending money each month.")
-
-# Main program execution
-income, rent, utilities, groceries, transportation = get_user_inputs()
-savings, rent_percent, utilities_percent, groceries_percent, transportation_percent, leftover = calculate_percentages(income, rent, utilities, groceries, transportation)
-print_results(rent, utilities, groceries, transportation, savings, rent_percent, utilities_percent, groceries_percent, transportation_percent, leftover)
+main()
