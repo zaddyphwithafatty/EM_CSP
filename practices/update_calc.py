@@ -16,7 +16,7 @@ def main():
     transportation = get_input("Enter your monthly transportation cost: $")
     entertainment = get_input("Enter your monthly entertainment cost: $")
 
-    print("\nHere is the percentage of your income spent on each category:")
+    print("Here is the percentage of your income spent on each category:")
     print(f"Rent: {calculate_percent(income, rent):.2f}%")
     print(f"Food: {calculate_percent(income, food):.2f}%")
     print(f"Transportation: {calculate_percent(income, transportation):.2f}%")
