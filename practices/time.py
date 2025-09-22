@@ -10,4 +10,4 @@ print(f"the hour is: {hour}")
 if hour >= 19:
     print("good evening")
 
-elif
+elif >= 
