@@ -1,5 +1,6 @@
 #EM 7th Calc update
 
+def input ( )
 income = float(input("Hi could you tell me what is your monthly income?"))
 rent = float(input("what is your monthly rent?"))
 utilities = float(input("what is your monthly utiltity bills?"))
