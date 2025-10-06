@@ -8,9 +8,13 @@ int main(void){
     double long_pi = .1415926358; // 8 bytes
     char letter_grade = 'A'; // 1 byte
     char name[] = "enzo";
-    // user input 
+    // user input
+    printf("what is your name: \n");
+    fgets(name, sizeof(name), stdin);
+
     printf("what is your grade percentage as a whole number: ");
     scanf("%d", &grade);
+    while (getchar() != '\n');
 
 
     printf("what is your letter grade: ");
@@ -51,6 +55,7 @@ int main(void){
 //main is a function and every line of code in C must be in a function
 
 //What is the difference between %d and %f format specifiers in printf()?
+//
 
 //How do you print a newline character in C?
 // \n
