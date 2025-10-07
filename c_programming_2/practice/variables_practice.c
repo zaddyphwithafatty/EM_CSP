@@ -23,4 +23,8 @@ int main(void){
     printf("my eye color is%s\n", eye_color);
     printf(im %d years old\n", age);
     printf("my favorite subject is %s\n," favorite subject);
+
+
+
+ return 0;       
 }
