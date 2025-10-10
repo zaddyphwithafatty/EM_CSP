@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 int main(void){
-  char name[30] 
-  printf("what is your name:\n")
+  char name[30];
+  printf("what is your name:\n");
   strcat(name, ("*** ***"));
-  printf("%s", name)
+  printf("%s", name);
 
 
 }
