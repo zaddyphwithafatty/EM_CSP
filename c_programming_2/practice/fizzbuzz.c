@@ -3,19 +3,17 @@
 
 int main (void){
     int num = 1;
-    while(num <= 50){
-        printf("%d\n", num);
-} if(num % 3 == 0);{
-    printf("fizz\n");
 
-} if(num % 5 == 0){
-    printf("buzz");
-    
-} if (num % 3==0 && num % 5 ==0);{
-    printf("fizzbuzz");
-}
+    for (int num =1; num <=50; num++){
+        if(num % 3 ==0 );
+            pritnf("fizz\n");
+    }   
+        else if (num % 5==0){
+            printf("buzz")
 
-    num++;
+    }
+
+        else if (num )
 
     return 0; 
 }
