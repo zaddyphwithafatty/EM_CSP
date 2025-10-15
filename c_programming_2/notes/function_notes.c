@@ -47,13 +47,13 @@ int main (void){
 //How do arguments and parameters work together?
 //arguents defines the statements and parameters take it an dsee if it is called
 //How to use parameters and arguments in C
-// make a variable inthe function and call it 
+// make a variable in the function and call it 
 // example bithday("jesus")
 
 //What are return statements?
 // when we take specific information and put it in the called function
 
-// return the staements and out puts them into place
+// return the statements and out puts them into place
 //
 //How do return statements change how you define a function in C?
 //it changes what is called and the value it is
