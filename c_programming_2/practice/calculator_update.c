@@ -3,25 +3,29 @@
 
 
 int main(){
-  float income,rent,utilities,groceries, transportation, savings, remaining;
-  printf("Enter monthly income:"); scanf("%f", &income);
-  printf("Rent:"); scanf("%f", &rent);
-  printf("utilities:"); scanf("%f", &utilities);
-  printf("groceries:"); scanf("%f", &groceries);
-  printf("transportation:"); scanf("%f", &transportation);
+  fkait vakyel
+  orubtf("%s", promt);
+  scanf*"%f", &value);
+  return value;
+}
+float calculator_percent(float income, float expense) {
+  return (expense / income) * 100;
+}
+int main(void) {
+  float income = get_input("put in what your monthly inocme is: ");
+  float rent = get_input("type in what your rent is: ");
+  float utilites = get_input("put in what your monthly cost for utilies is: ");
+  float groceries = get_input(" type in how much you spend on groceries: ");
+  float transportation = get_input(" put in how much you spend on transportation monthly: ")
 
-  savings = income*0.10;
-  remaining= income-(rent+ utilities + groceries + transportation + savings);
+  printf("your rent is $%.2f that is %.0f%% of your income.\n", rent, calculate_percent(income, rent));
+  printf("your utilities are $%,2f that is %.0f%% of your income\n", utilities, calculate_percent(income, utilities));
+  printf("your groceries is $%.2f that is %.0f%% of your income\n", groceries, calculate_percent(income, grocereis));
+  printf("your transportaion is $%.2f that is %.0%% of your income\n", transportation, calculate_percent(income, transportation));
 
-  printf("\n--monthly summary --\n");
-  printf("saving(10%%):2f\n", savings);
-  printf("remaining to spend %.2f\n", remaining);
-  printf("\n-- percent of income --\n");
-  printf("rent %1f%%\n", (rent/income)*100);
-  printf("utilities: %1f%%\n", (groceries/income)*100);
-  printf("groceries: %1f%%\n", (groceries/income)*100);
-  printf("transportation: %1f%%\n", (transportation/income)*100);
-  printf("savings: %1f%%\n",(savings/income)*100);
+  float total_expenses = rent +utilities + groceries + transportaion;
+  float spending_money = income - total expenses;
+  printf("you have $%.2f of money to spend each month so be carful!!!\n", spending_money);
 
   return 0;
 }
